@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Jacquard+24&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #030712;
+  --bg-secondary: #0a0e16;
+  --bg-highlight: #131927;
+
+  --border: #292F3A;
+
+  --text-primary: #ffffff;
+  --text-secondary: #6a7893;
+  --text-highlight: #a7b6d3;
+
+  --accent: #9677ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Nunito", sans-serif;
+
+  background-color: var(--bg-primary);
+  background-image: url("/background.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px 0;
+
+  gap: 10px;
+
+  background: linear-gradient(to right, #ff6060, #ffb75f, #58ff82, #4c82ff, #e74dff);
+}
+
+.pride-flag {
+  height: 25px;
+  border-radius: 5px;
+}
+
+.banner p {
+  margin: 0;
+  color: #001e3a;
+  font-weight: 500;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.body {
+  padding: 50px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.3em;
+
+  color: var(--text-primary);
+}
+
+#the {
+  font-family: "Jacquard 24", system-ui;
+  font-size: 5em;
+
+  background: linear-gradient(90deg, #ff67e6, #9f67ff, #67d4ff, #67d4ff, #67d4ff);
+  background-clip: text;
+  color: transparent;
+}
+
+hr {
+  color: var(--border);
+}
+
+.card-text {
+  color: var(--text-secondary);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: var(--text-secondary);
+}
+
+.card-link {
+  transition: .1s ease;
+}
+
+.card-link:hover {
+  color: var(--accent);
+}
+
+#github {
+  color: white;
+}
+
+#twitter {
+  color: #1D9BF0
+}
+
+#discord {
+  color: #5865F2;
+}
+
+#youtube {
+  color: #FF0033;
+}
+
+textarea {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+
+  transition: .1s ease;
+}
+
+textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 13px;
+  width: 100%;
+
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, var(--border), #c74646, #d09245, #2ba84a, #2953b4, #8b249b, var(--border)) 1;
+  background-color: var(--bg-secondary);
+}
+
+.title h4 {
+  color: var(--text-secondary);
+  transition: .1s ease;
+}
+
+.title h4:hover {
+  color: var(--accent);
+}
+
+.items {
+  display: flex;
+  gap: 5px;
+}
+
+.items a {
+  padding: 7px 13px;
+  border-radius: 5px;
+
+  color: var(--text-secondary);
+
+  transition: .1s ease;
+}
+
+.items a:hover {
+  background-color: var(--bg-highlight);
+  color: var(--text-highlight);
+}
+
+.utilities {
+  display: flex;
+  gap: 15px;
+  color: var(--text-secondary);
+
+  transition: .1s ease;
+}
+
+#github-footer:hover {
+  color: white;
+}
+
+#vue-footer:hover {
+  color: #41B883;
+}
+
+#tailwind-footer:hover {
+  color: #38BDF8;
+}
+
+#typescript-footer:hover {
+  color: #007bff;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--text-secondary);
+}
