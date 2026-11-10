@@ -5,6 +5,6 @@ const baseUrl = import.meta.env.BASE_URL
 <template>
     <div class = "banner">
         <img class = "pride-flag" :src="`${baseUrl}pride-flag.svg`" alt="Pride Flag" />
-        <p>Much love to all my queer friends!!! I love you all!</p>
+        <p>Much love to all my queer friends !!</p>
     </div>
 </template>
