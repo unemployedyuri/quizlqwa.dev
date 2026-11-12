@@ -8,7 +8,7 @@ const baseUrl = import.meta.env.BASE_URL
         <div class = "card">
             <h3 id = "the" class = "card-title">The</h3>
             <h3 class = "card-title">Welcome to my website</h3>
-            <img src = "https://cdn.discordapp.com/attachments/756183563367612509/1569142684130480178/silly-dog.gif?ex=6af26181&is=6af11001&hm=1fd89d97ed00d69a8cfe95970f5f52745de76b85f6415171523a91f1d96818f0&">
+            <img :src="`${baseUrl}silly-dog.gif`" alt="dog" />
 
             <audio controls>
                 <source :src="`${baseUrl}awesome.mp3`">
@@ -77,6 +77,11 @@ const baseUrl = import.meta.env.BASE_URL
             <div class = "list">
                 <font-awesome-icon id = "youtube" icon = "fa-brands fa-youtube"/>
                 <a class = "card-text card-link" href = "https://www.youtube.com/@sumire1107">Sumire1107</a>
+            </div>
+
+            <div class = "list">
+                <img class = "pride-flag" :src="`${baseUrl}straw-page.png`" alt="straw.page logo" />
+                <a class = "card-text card-link" href = "https://unemployedyuri.straw.page/">unemployedyuri.straw.page</a>
             </div>
 
         </div>

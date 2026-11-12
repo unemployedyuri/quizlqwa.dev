@@ -6,7 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faGithub, faDiscord, faYoutube, faTwitter, faTailwindCss, faVuejs, faTypescript } from '@fortawesome/free-brands-svg-icons'
-import { faVenus, faCode, faPaintBrush } from '@fortawesome/free-solid-svg-icons'
+import { faVenus, faCode, faPaintBrush, faSmile } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faGithub, faDiscord, faYoutube, faTwitter, faTailwindCss, faVuejs, faTypescript, faVenus, faCode, faPaintBrush)
+library.add(faGithub, faDiscord, faYoutube, faTwitter, faTailwindCss, faVuejs, faTypescript, faVenus, faCode, faPaintBrush, faSmile)
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
